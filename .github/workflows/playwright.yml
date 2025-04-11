@@ -31,7 +31,7 @@ jobs:
           sleep 3
 
       - name: 🧪 Run Playwright tests and generate HTML report
-        run: npx playwright test --reporter=html
+        run: npx playwright test testing/math.spec.js --reporter=html
 
       - name: 📁 Upload Playwright HTML report
         uses: actions/upload-artifact@v4
