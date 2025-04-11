@@ -7,6 +7,10 @@ app.use(cors()); // ✅ Enable CORS for all origins
 app.use(express.static(__dirname));
 app.use(express.json());
 
+app.get('/', (req, res) => {
+  res.sendFile(__dirname + '/test.html');
+});
+
 app.post('/api/login', (req, res) => {
   const { username, password } = req.body;
   if (username === 'admin' && password === 'admin') {
