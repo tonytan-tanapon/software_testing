@@ -6,7 +6,8 @@
   "type": "commonjs",
   "scripts": {
     "start": "node server.js",
-    "test": "npx playwright test"
+    "test": "npx playwright test",
+    "posttest": "mkdir -p docs/test-report && cp -r playwright-report/* docs/test-report/"
   },
   "keywords": [],
   "author": "",
