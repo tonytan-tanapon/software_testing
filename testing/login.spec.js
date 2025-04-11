@@ -12,7 +12,7 @@ test.describe('Login Integration Tests', () => {
   for (const { username, password, expected } of testCases) {
     test(`Login with username="${username}" and password="${password}"`, async ({ page }) => {
       // Open the HTML page served from local server (e.g., Live Server)
-      await page.goto('http://localhost:5500/test.html');
+      await page.goto('http://localhost:3000/test.html');
 
       // Fill in the username and password
       await page.fill('#username', username);
