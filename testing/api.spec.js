@@ -32,3 +32,5 @@ test.describe('Login API Functional Tests (Dynamic)', () => {
     });
   }
 });
+
+// npx playwright test testing/api.spec.js

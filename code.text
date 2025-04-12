@@ -1,0 +1,27 @@
+# Write a SQL query to analyze 2 tables (Table A  & Table B)
+#  which has EmailAddress as one of its  Unique field/constraints.  
+# Compare Email Address in both the tables and flag the availability of it in both the tables.
+
+# TableA	 	 	 	                        TableB	 
+# EmailAddress	First Name	   Last Name	 	EmailAddress	Full Name
+# a1@dgs.ca.gov	 	 	 	                    a1@dgs.ca.gov	 
+# a2@dgs.ca.gov	 	 	 	                    a3@dgs.ca.gov	 
+# a4@dgs.ca.gov	 	 	 	                    a4@dgs.ca.gov	 
+
+
+# Expected Result	 	 
+ 	 	 
+# EmailAddress	Available in TableA (Yes/No)	Available in TableB (Yes/No)
+# a1@dgs.ca.gov	        Yes	                    Yes
+# a2@dgs.ca.gov	        Yes	                    No
+# a3@dgs.ca.gov	        No	                    Yes
+# a4@dgs.ca.gov	        Yes	                    Yes
+
+SQL :
+SQL : left join and right  join 
+SELECT * FROM TableA 
+LEFT JOIN TableB 
+
+
+
+

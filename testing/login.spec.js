@@ -28,3 +28,6 @@ test.describe('Login Integration Tests', () => {
     });
   }
 });
+
+
+// npx playwright test testing/login.spec.js

@@ -12,3 +12,4 @@ test('returns false for wrong password', () => {
 test('returns false for empty fields', () => {
   expect(isValidUser('', '')).toBe(false);
 });
+// npx playwright test testing/unit.spec.js
